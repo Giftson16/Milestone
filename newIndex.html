@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            /* background-color: bisque; */ 
+        }
+
+        .gift1 img {
+            position: relative;
+            top: 5px;
+        }
+
+        .content h1 {
+            color: rgb(9, 9, 68);
+            font-size: 40px;
+        }
+
+        .about h1,
+        .about h5 {
+            color: rgb(9, 9, 68);
+        }
+
+        .passage {
+            color: rgb(9, 9, 68);
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            margin-top: 50px;
+        }
+
+        .box1 button,
+        .content button {
+            color: white;
+        }
+
+        .box3 {
+            height: 250px;
+            position: relative;
+            /* top: 50px; */
+            left: 20px;
+            background-color: orange;
+            height: 350px;
+            width: 300px;
+        }
+
+        .box3 img {
+            height: 250px;
+            position: absolute;
+            right: 10px;
+            top: 15px;
+            /* left: 10px; */
+            height: 320px;
+            width: 300px;
+            box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .gift1 a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .youtube-gif iframe{
+        margin-left: 210px;
+        }
+
+        /* media query */
+        @media only screen and (max-widnoteth: 767px) {
+            .youtube-gif iframe{
+                margin-left: -130px;
+            }
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page1" style="background-color: white;">
+            <div class="giftson" style="padding-right: 20px;">
+                <div class="gift1 d-flex justify-content-between align-items-center">
+                    <img src="./pngtree-orange-logo-abstract-vector-designs-png-image_2132671-removebg-preview.png"
+                        class="img-fluid" height="100px" width="100px" alt="Logo">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="newIndex.html" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cotact">Contact me</a>
+                        </li>
+                    </ul>
+                    <div class="d-grid d-md-flex justify-content-md-end">
+                        <button type="button" id="Edit" class="btn" style="background-color: #ff8b7d;color: white;">Edit</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content row" style="padding-left: 20px; margin-left: 50px;">
+                <div class="col-md-6">
+                    <h1><span id="fullname"> Type your name in pop up box</span></h1><br>
+                        <h2><span id="course"> Full Stack Developer</span></h2>
+                        <div id="dynamicContent">
+                            <h2 id="output">Bio</h2>
+                        </div>
+                    <button type="button" class="btn" style="background-color: #ff8b7d;">Download</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="C:\Users\DELL\OneDrive\Documents\Special Task\Giftson.png" class="img-fluid" alt="Girl Image">
+                </div>
+            </div>
+        </div>
+        <div class="about" id="About" style="text-align : center;">
+            <h1>About Me</h1>
+            <div id="dynamicContent">
+                <h2 id="output1">About u</h2>
+        </div>
+        <br><br>
+        <div class="passage" style="padding-left: 20px;">
+            <h1>Developing skills a passion<br>wide exploring the world. </h1>
+        </div>
+        <div class="props row" style="padding-left: 20px;">
+            <div class="box1 col-md-4">
+                <div id="dynamicContent">
+                    <p id="output2">Skills in 50words</p>
+                </div>
+            </div>
+            <div class="box2 col-md-4">
+                <div id="dynamicContent">
+                    <p id="output3">Skills in 50words</p>
+                </div>
+            </div>
+            <div class="box3 col-md-4">
+                <img src="C:\Users\DELL\OneDrive\Documents\Special Task\Business lap.jpg" class="img-fluid"
+                    alt="Business Laptop Image">
+            </div>
+        </div>
+        <br>
+        <div style="align-items: center;padding-left: 20px;">
+            <button type="button" class="btn" style="background-color: #ff8b7d;color: white;">Download</button>
+        </div>
+        <br>
+        <br>
+        <div class="row" id="service" style="padding-left: 110px;background-color: #fff9f9;padding-top: 50px;">
+            <div class="about" style="text-align : center;">
+                <h1>What Services I'm Providing</h1>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                <br><br>
+            </div>
+
+            <div class="card col-md-4" style="width: 300px;">
+                <div class="card-body">
+                    <img width="100" height="100"
+                        src="https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/computer.png"
+                        class="attachment-large size-large wp-image-492" alt=""
+                        srcset="https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/computer.png 256w, https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/computer-150x150.png 150w"
+                        sizes="(max-width: 256px) 100vw, 256px">
+                        <div id="dynamicContent">
+                            <p id="output4">Service 1</p>
+                        </div>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                        nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p><br>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>&nbsp;&nbsp;
+            <div class="card col-md-4" style="width: 300px;">
+                <div class="card-body">
+                    <img width="100" height="100"
+                        src="https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/ads-150x150.png"
+                        class="attachment-thumbnail size-thumbnail wp-image-519" alt=""
+                        srcset="https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/ads-150x150.png 150w, https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/ads.png 256w"
+                        sizes="(max-width: 150px) 100vw, 150px">
+                        <div id="dynamicContent">
+                            <p id="output5">Service 2</p>
+                        </div>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                        nec ullamcorper mattis, pulvinar dapibus leo.</p><br>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>&nbsp;&nbsp;
+            <div class="card col-md-4" style="width: 300px;">
+                <div class="card-body">
+                    <img decoding="async" loading="lazy" width="100" height="100"
+                        src="https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/settings.png"
+                        class="attachment-large size-large wp-image-494" alt=""
+                        srcset="https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/settings.png 256w, https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/settings-150x150.png 150w"
+                        sizes="(max-width: 256px) 100vw, 256px">
+                        <div id="dynamicContent">
+                            <p id="output6">Service 3</p>
+                        </div>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                        nec ullamcorper mattis, pulvinar dapibus leo.</p><br>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    <div class="container">
+        <div class="col-md-4 ms-5 ps-5 youtube-gif">
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/z0n1aQ3IxWI?si=rE7MK6WqNEHbZD9N"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+        <br><br>
+        <div class="row">
+            <div class="about" style="text-align : center;">
+                <h1>Work Experience</h1>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5><br><br>
+            </div>
+            <span style="box-sizing: border-box;width: 9%;margin: 0 auto;border-top: 2px solid #ec5b53">
+            </span>
+        </div>
+        <br>
+        <br>
+        <div class="container" style="padding-left: 110px;background-color: #fff9f9;padding-top: 50px;">
+            <div class="row" style="padding-left: 20px;">
+                <div class="col-sm-5" style="background-color: white;border: radius 5px;">
+                    <div id="dynamicContent">
+                        <p id="output7"><b>Experience1</b></p>
+                    </div>
+                    <span>2015-2018</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis, pulvinar dapibus leo.</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;background-color: #ec5b53;"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">UI/UX Designer</div>
+                    </div>
+                </div>&nbsp;&nbsp;
+                <div class="col-sm-5" style="background-color: white; border: radius 5px;">
+                    <div id="dynamicContent">
+                        <p id="output8"><b>Experience2</b></p>
+                    </div>
+                    <span>2015-2018</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis, pulvinar dapibus leo.</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;background-color: #ec5b53;"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Web Designer</div>
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="row">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="col-sm-3" style="background-color: white; border: radius 5px;">
+                    <div id="dynamicContent">
+                        <p id="output9"><b>Experience3</b></p>
+                    </div>
+                    <span>2015-2018</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis, pulvinar dapibus leo.</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 65%;background-color: #ec5b53;"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Web Developer</div>
+                    </div>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="col-sm-3" style="background-color: white; border: radius 5px; ">
+                    <div id="dynamicContent">
+                        <p id="output10"><b>Experience4</b></p>
+                    </div>
+                    <span>2015-2018</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis, pulvinar dapibus leo.</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;background-color: #ec5b53;"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Graphic Designer</div>
+                    </div>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="col-sm-3" style="background-color: white; border: radius 5px; ">
+                    <h3>
+                        Marketing
+                    </h3>
+                    <span>2015-2018</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis, pulvinar dapibus leo.</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 60%;background-color: #ec5b53;"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Marketing</div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+        <div class="row" id="portfolio" style="padding-left: 110px;padding-top: 50px;">
+            <div class="about" style="text-align : center;">
+                <h1>My Portfolio</h1>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                <br><br>
+            </div>
+        </div>
+
+        <div class="coursel-image-grp d-flex port-folio" style="padding-left: 70px;padding-top: 50px;">
+            <div>
+                <img style="height: 150px; width: 350px;"
+                    src="https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/portfolio-6-1.png"
+                    alt="portfolio-6">&nbsp;&nbsp;&nbsp;&nbsp;
+                <img style="height: 150px; width: 350px;"
+                    src="https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/portfolio-4.png"
+                    alt="portfolio-4">&nbsp;&nbsp;&nbsp;&nbsp;
+                <img style="height: 150px; width: 350px;"
+                    src="https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/portfolio-7-1.png"
+                    alt="portfolio-7">
+            </div>
+        </div><br><br>
+
+        <div class="row" style="padding-left: 150px;background-color: #fff9f9;padding-top: 50px;">
+            <div class="about" style="text-align : center;">
+                <h1>What My Clients Says</h1>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                <br><br>
+            </div>
+
+            <div class="card col-md-4" style="width: 300px;padding-left: 10px;">
+                <div class="card-body">
+                    <div class="elementor-element elementor-element-b5670d9 elementor-widget elementor-widget-image"
+                        data-id="b5670d9" data-element_type="widget" data-widget_type="image.default">
+                        <div class="elementor-widget-container">
+                            <img width="116" height="116" style=" border-radius: 50%"
+                                src="https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/male-3.jpg">
+                        </div>
+                        <br><br>
+                    </div>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                        nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p><br>
+                    <p class="card-text">John Doe</p>
+                </div>
+            </div>&nbsp;&nbsp;
+            <div class="card col-md-4" style="width: 300px;padding-left: 10px;">
+                <div class="card-body">
+                    <img width="116" height="116" style=" border-radius: 50%"
+                        src="https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/female-3-150x150.jpg">
+                    <br><br><br>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                        nec ullamcorper mattis, pulvinar dapibus leo.</p><br>
+                    <p class="card-text">Jenna Smith</p>
+                </div>
+            </div>&nbsp;&nbsp;
+            <div class="card col-md-4" style="width: 300px;padding-left: 10px;">
+                <div class="card-body">
+                    <img width="116" height="116" style=" border-radius: 50%"
+                        src="https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/male-1.jpg">
+                    <br><br><br>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                        nec ullamcorper mattis, pulvinar dapibus leo.</p><br>
+                    <p class="card-text">Samuel Stevens</p>
+                </div>
+            </div>
+        </div><br><br>
+
+        <div class="coursel-image-grp d-flex" id="cotact" style="padding-left: 110px;padding-top: 50px;">
+            <div class="about" style="text-align : center;">
+                <h1>Stay In Touch</h1>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h5>
+                <br><br>
+                <input type="email" placeholder="Enter email address" spellcheck="false">
+                <br><br>
+                <button type="button" class="btn" style="background-color: #ff8b7d;color: white;">Subscribe</button>
+            </div>
+        </div><br><br>
+
+        <div class="giftson" style="background-color:#002d5b; height: 200px; margin-left: 90px; text-align: center; color: white; class">
+            <div>
+                <br><br>
+
+                <h2>mail@example.com</h2> 
+                <br><br>
+                <p>Copyright © 2023 Personal Portfolio</p>
+                <br><br>                
+            </div>
+        </div>
+    </div>
+    <div class="inp">
+        <input type="text" id="inpp" placeholder="Edit Bio">
+        <input type="text" id="fnpp" placeholder="Edit About me">
+        <input type="text" id="gnpp" placeholder="Edit Skills1">
+        <input type="text" id="hnpp" placeholder="Edit Skills2"> 
+        <input type="text" id="jnpp" placeholder="Service providing1">
+        <input type="text" id="knpp" placeholder="Service providing2">
+        <input type="text" id="lnpp" placeholder="Service providing3">
+        <input type="text" id="mnpp" placeholder="Experience1">
+        <input type="text" id="nnpp" placeholder="Experience2">
+        <input type="text" id="onpp" placeholder="Experience3">
+        <input type="text" id="pnpp" placeholder="Experience4">
+        <input type="text" id="qnpp" placeholder="Experience5">
+
+    </div>
+    <script>
+        document.getElementById('fullname').innerText = 'Type your name in the Prompt';
+        document.getElementById('course').innerText = 'Course details in the prompt';
+        document.getElementById('Edit').innerText = 'EDIT';
+        function handleEditClick() {
+
+            var newName = prompt('Enter your new name:');
+            if (newName !== null && newName !== '') {
+                document.getElementById('fullname').innerText = newName;
+            }
+
+            var newCourse = prompt('Enter your course:');
+            if (newCourse !== null && newCourse !== '') {
+                document.getElementById('course').innerText = newCourse;
+            }
+            let a = document.querySelector('#output');
+     console.log(a)
+        let b = document.querySelector('#inpp').value;
+        a.innerHTML=b;
+     console.log(b);
+     
+     let c = document.querySelector('#output1');
+     console.log(c)
+        let d = document.querySelector('#fnpp').value;
+        c.innerHTML=d;
+     console.log(d)
+
+     let e = document.querySelector('#output2');
+     console.log(e)
+        let f = document.querySelector('#gnpp').value;
+        e.innerHTML=f;
+     console.log(f)
+
+     let g = document.querySelector('#output3');
+     console.log(g)
+        let h = document.querySelector('#hnpp').value;
+        g.innerHTML=h;
+     console.log(h)
+
+     let i = document.querySelector('#output4');
+     console.log(i)
+        let j = document.querySelector('#jnpp').value;
+        i.innerHTML=j;
+     console.log(j)
+
+     let k = document.querySelector('#output5');
+     console.log(k)
+        let l = document.querySelector('#jnpp').value;
+        k.innerHTML=l;
+     console.log(l)
+
+     let m = document.querySelector('#output6');
+     console.log(m)
+        let n = document.querySelector('#lnpp').value;
+        m.innerHTML=n;
+     console.log(n)
+
+     let o = document.querySelector('#output7');
+     console.log(o)
+        let p = document.querySelector('#mnpp').value;
+        o.innerHTML=p;
+     console.log(p)
+
+     let q = document.querySelector('#output8');
+     console.log(q)
+        let r = document.querySelector('#nnpp').value;
+        q.innerHTML=r;
+     console.log(r)
+
+     let s = document.querySelector('#output9');
+     console.log(s)
+        let t = document.querySelector('#mnpp').value;
+        s.innerHTML=t;
+     console.log(t)
+
+     let u = document.querySelector('#output10');
+     console.log(u)
+        let v = document.querySelector('#onpp').value;
+        u.innerHTML=v;
+     console.log(v)
+
+     let s = document.querySelector('#output11');
+     console.log(s)
+        let t = document.querySelector('#mnpp').value;
+        s.innerHTML=t;
+     console.log(t)
+
+        }
+        
+        document.getElementById('Edit').addEventListener('click', handleEditClick);
+
+  
+    </script>
+</body>
+
+</html>
